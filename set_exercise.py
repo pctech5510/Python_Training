@@ -12,3 +12,5 @@ attendance_list = ['Jammy', 'Bobby', 'Danny', 'Sally']
 # using set.difference, this will compare both variables, and list the difference,
 # or in this use case, it is what is the who's playing hooky or "difference". 
 print(set.difference(school,attendance_list))
+#Another way to do the same thing, less code or refactoring
+print(school.difference(attendance_list))
