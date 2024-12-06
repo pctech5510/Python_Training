@@ -60,9 +60,16 @@ for i in picture:
 
 some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
 
-for t in some_list:
-    for d in t:
-        if d == t:
-            print(d)
-else:
-    print("Try again")
+#We need to iterate through the list
+another_list = []
+#We will need to store the duplicates and print them out
+for letter in some_list:
+    if some_list.count(letter) > 1:
+#We will make sure only 1 instance of the duplicate is put i the list
+        if letter not in another_list:
+            another_list.append(letter)
+
+print(another_list)
+
+
+
