@@ -18,5 +18,10 @@ def oldest_cat():
     return max(cat1.age, cat2.age, cat3.age)
 
 
+def alternative_Old_Cat(*args):
+    return max(args)
+
+
 # 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
 print(f'Oldest Cat is {oldest_cat()} years old')
+print(f'Oldest Cat is {alternative_Old_Cat(cat1.age, cat2.age, cat3.age)} years old')
